@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Lumière</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="reserve-btn">Reserve Table</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Lumière</h1>
+            <p>Where culinary artistry meets timeless elegance</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Explore Menu</button>
+                <button class="btn btn-secondary">Reserve Table</button>
+                <button class="btn btn-order">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🥐</div>
+                    <h3>Freshly Baked Daily</h3>
+                    <p>Breads, cakes, and pastries baked fresh every morning with love</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🍳</div>
+                    <h3>Handcrafted Treats</h3>
+                    <p>Every item is handmade using traditional recipes and premium ingredients</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎉</div>
+                    <h3>Sweet Moments</h3>
+                    <p>Perfect place to celebrate birthdays, evenings, and everyday cravings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Bakery Menu</h2>
+            <p class="section-subtitle">Waffles, Cakes, Cookies & Brownies</p>
+            
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <h3>Fresh Waffles</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Classic Belgian Waffle</div>
+                                <div class="item-price">₹420</div>
+                            </div>
+                            <p class="item-description">Crispy golden waffle made with our signature Belgian batter, topped with whipped cream and fresh berries</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Chocolate Chip Waffle</div>
+                                <div class="item-price">₹480</div>
+                            </div>
+                            <p class="item-description">Fluffy waffle loaded with premium chocolate chips, served with chocolate sauce and ice cream</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Strawberry Delight Waffle</div>
+                                <div class="item-price">₹450</div>
+                            </div>
+                            <p class="item-description">Buttery waffle topped with fresh strawberries, honey drizzle, and a dollop of whipped cream</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <h3>Delicious Cakes</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Chocolate Truffle Cake</div>
+                                <div class="item-price">₹675</div>
+                            </div>
+                            <p class="item-description">Rich chocolate cake with layers of chocolate ganache, dark chocolate truffles, served with a scoop of vanilla ice cream</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Velvet Red Cake</div>
+                                <div class="item-price">₹570</div>
+                            </div>
+                            <p class="item-description">Elegant red velvet cake with cream cheese frosting, topped with white chocolate shavings</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Strawberry Cheesecake</div>
+                                <div class="item-price">₹630</div>
+                            </div>
+                            <p class="item-description">Creamy cheesecake with graham cracker crust, fresh strawberries, and berry coulis</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Carrot Cake</div>
+                                <div class="item-price">₹540</div>
+                            </div>
+                            <p class="item-description">Moist carrot cake with cream cheese frosting, walnuts, and a hint of spices</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Black Forest Cake</div>
+                                <div class="item-price">₹720</div>
+                            </div>
+                            <p class="item-description">Classic chocolate cake with cherry filling, whipped cream, and dark chocolate curls</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <h3>Freshly Baked Cookies</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Chocolate Chip Cookies</div>
+                                <div class="item-price">₹180</div>
+                            </div>
+                            <p class="item-description">Classic buttery cookies loaded with premium chocolate chips, baked to perfection with a crispy edge and chewy center</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Oatmeal Raisin Cookies</div>
+                                <div class="item-price">₹150</div>
+                            </div>
+                            <p class="item-description">Wholesome oatmeal cookies with plump raisins, brown sugar, and a hint of cinnamon</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Almond Biscotti</div>
+                                <div class="item-price">₹195</div>
+                            </div>
+                            <p class="item-description">Crunchy Italian-style twice-baked cookies with sliced almonds, perfect for dipping in coffee or tea</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Shortbread Cookies</div>
+                                <div class="item-price">₹210</div>
+                            </div>
+                            <p class="item-description">Buttery melt-in-mouth shortbread cookies with a delicate texture, available in vanilla or chocolate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <h3>Decadent Brownies</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Classic Chocolate Brownie</div>
+                                <div class="item-price">₹270</div>
+                            </div>
+                            <p class="item-description">Rich and fudgy chocolate brownie made with premium cocoa, served warm with a scoop of vanilla ice cream</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Walnut Fudge Brownie</div>
+                                <div class="item-price">₹300</div>
+                            </div>
+                            <p class="item-description">Decadent fudgy brownie loaded with roasted walnuts and dark chocolate chunks</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Caramel Swirl Brownie</div>
+                                <div class="item-price">₹315</div>
+                            </div>
+                            <p class="item-description">Chocolate brownie with caramel ribbons and sea salt, delivering a perfect balance of sweet and salty</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">White Chocolate Raspberry Brownie</div>
+                                <div class="item-price">₹330</div>
+                            </div>
+                            <p class="item-description">Fudgy chocolate base with white chocolate pieces and fresh raspberries throughout</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <h3>Premium Coffee</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Espresso</div>
+                                <div class="item-price">₹120</div>
+                            </div>
+                            <p class="item-description">Strong and bold shot of freshly pulled espresso from premium arabica beans</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Cappuccino</div>
+                                <div class="item-price">₹180</div>
+                            </div>
+                            <p class="item-description">Perfectly balanced espresso with steamed milk and a layer of rich foam</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Latte</div>
+                                <div class="item-price">₹200</div>
+                            </div>
+                            <p class="item-description">Creamy espresso-based drink with velvety steamed milk, topped with a thin layer of foam</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Americano</div>
+                                <div class="item-price">₹150</div>
+                            </div>
+                            <p class="item-description">Smooth and full-bodied coffee made with espresso shots and hot water</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Mocha</div>
+                                <div class="item-price">₹220</div>
+                            </div>
+                            <p class="item-description">Delicious blend of espresso, steamed milk, and rich chocolate sauce, topped with whipped cream</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <div class="item-name">Caramel Macchiato</div>
+                                <div class="item-price">₹240</div>
+                            </div>
+                            <p class="item-description">Espresso-based coffee with velvety steamed milk and sweet caramel drizzle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p class="section-subtitle">A glimpse into our bakery world</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&h=500&fit=crop" alt="Delicious brownie">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500&h=500&fit=crop" alt="Freshly baked cookies">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop" alt="Bakery shop">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=500&h=500&fit=crop" alt="Bakery shop display">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&h=500&fit=crop" alt="Bakery shop interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=500&fit=crop" alt="Delicious cake">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Visit Us</h2>
+            <p class="section-subtitle">We look forward to serving you</p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>123 Culinary Boulevard<br>Downtown District<br>New York, NY 10001</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <h3>Hours</h3>
+                    <p>Tuesday - Saturday<br>5:00 PM - 11:00 PM<br>Sunday: 4:00 PM - 10:00 PM<br>Monday: Closed</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">☎️</div>
+                    <h3>Contact</h3>
+                    <p>Phone: (555) 123-4567<br>Email: info@lumiere.com<br>Reservations: reserve@lumiere.com</p>
+                </div>
+            </div>
+
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step 1: Party Size Modal -->
+    <div id="partySizeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePartySizeModal()">&times;</span>
+            <h2>How Many People?</h2>
+            
+            <div class="party-size-container">
+                <p>Select the number of guests for your reservation:</p>
+                <div class="party-size-options">
+                    <button type="button" class="party-btn" data-size="1">1</button>
+                    <button type="button" class="party-btn" data-size="2">2</button>
+                    <button type="button" class="party-btn" data-size="3">3</button>
+                    <button type="button" class="party-btn" data-size="4">4</button>
+                    <button type="button" class="party-btn" data-size="5">5</button>
+                    <button type="button" class="party-btn" data-size="6">6</button>
+                    <button type="button" class="party-btn" data-size="7">7</button>
+                    <button type="button" class="party-btn" data-size="8">8</button>
+                    <button type="button" class="party-btn" data-size="9">9</button>
+                    <button type="button" class="party-btn" data-size="10">10+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 2: Reservation Details Modal -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeReservationModal()">&times;</span>
+            <h2>Complete Your Reservation</h2>
+            <p class="party-info" id="partyInfo">Party size: <strong id="selectedPartySize">-</strong> guests</p>
+            
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="customerName">Full Name:</label>
+                    <input type="text" id="customerName" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number:</label>
+                    <input type="tel" id="customerPhone" required placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="reservationDate">Date:</label>
+                    <input type="date" id="reservationDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Time Slot:</label>
+                    <div class="time-slots">
+                        <button type="button" class="time-slot" data-time="5:00 PM">5:00 PM</button>
+                        <button type="button" class="time-slot" data-time="5:30 PM">5:30 PM</button>
+                        <button type="button" class="time-slot" data-time="6:00 PM">6:00 PM</button>
+                        <button type="button" class="time-slot" data-time="6:30 PM">6:30 PM</button>
+                        <button type="button" class="time-slot" data-time="7:00 PM">7:00 PM</button>
+                        <button type="button" class="time-slot" data-time="7:30 PM">7:30 PM</button>
+                        <button type="button" class="time-slot" data-time="8:00 PM">8:00 PM</button>
+                        <button type="button" class="time-slot" data-time="8:30 PM">8:30 PM</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Table:</label>
+                    <div class="available-tables" id="availableTables">
+                        <div class="table-slot available" data-table="1">Table 1</div>
+                        <div class="table-slot available" data-table="2">Table 2</div>
+                        <div class="table-slot booked" data-table="3">Table 3</div>
+                        <div class="table-slot available" data-table="4">Table 4</div>
+                        <div class="table-slot booked" data-table="5">Table 5</div>
+                        <div class="table-slot available" data-table="6">Table 6</div>
+                        <div class="table-slot available" data-table="7">Table 7</div>
+                        <div class="table-slot booked" data-table="8">Table 8</div>
+                        <div class="table-slot available" data-table="9">Table 9</div>
+                        <div class="table-slot booked" data-table="10">Table 10</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Reserved Table Alert Modal -->
+    <div id="alertModal" class="modal">
+        <div class="modal-content modal-alert">
+            <span class="close" onclick="closeAlert()">&times;</span>
+            <h2>Already Booked</h2>
+            <p id="alertMessage">This table is already booked for the selected time slot. Please choose another table.</p>
+            <button class="btn btn-primary" onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content modal-thank-you">
+            <div class="thank-you-content">
+                <div class="thank-you-icon">✓</div>
+                <h2>Thank You!</h2>
+                <p class="thank-you-message">Your reservation has been confirmed</p>
+                
+                <div class="reservation-summary">
+                    <div class="summary-item">
+                        <span class="label">Guest Name:</span>
+                        <span class="value" id="confirmName">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Phone:</span>
+                        <span class="value" id="confirmPhone">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Date:</span>
+                        <span class="value" id="confirmDate">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Time:</span>
+                        <span class="value" id="confirmTime">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Party Size:</span>
+                        <span class="value" id="confirmParty">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Table:</span>
+                        <span class="value" id="confirmTable">-</span>
+                    </div>
+                </div>
+
+                <p class="thank-you-closing">We look forward to welcoming you!</p>
+                <button class="btn btn-primary" onclick="closeThankYou()">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Lumière Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
