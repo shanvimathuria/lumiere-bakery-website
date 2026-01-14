@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   orderBtn.addEventListener("click", () => {
     // Specific WhatsApp number (India)
-    const phoneNumber = "8383811681";
+    const phoneNumber = "+91 8383811681";
 
     // Optional WhatsApp message
     const message = "Hello! I would like to place an order.";
